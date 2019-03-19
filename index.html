@@ -5,21 +5,74 @@
     <meta type="description" content="This is a version of hangman where players guess the names of different species of trees.">
     <title>Which Tree is It?</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+    <link rel="stylesheet" type="text/css" href="https://hetty-chin.github.io/Bootstrap-Portfolio/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/javascript/game.js"></script>
   </head>
 
   <body>
-      <div id="get-started">Press any key to get started!</div>
-      <h1>Chosen word</h1>
-      <div id="chosen-word"></div>
-      <h1>Games won</h1>
-      <div id="games-won"></div>
-      <h1>Remaining Guesses</h1>
-      <div id="remaining-guess"></div>
-      <h1>Guessed Wrong Letters</h1>
-      <div id="guessed-wrong-letters"></div>
-      <img id ="tree-photo" src ="assets/images/QuestionTree.jpeg">
+    <!--nav bar-->
+    <nav class="navbar sticky-top navbar-light bg-white border-bottom">
+      
+        <div class="navbar-brand p-4">
+          <h2>
+            Hetty
+          </h2>
+        </div>
+  
+        <ul class="nav justify-content-end">
+          <li class="nav-item border-right">
+            <a class="nav-link" href="https://hetty-chin.github.io/Bootstrap-Portfolio/index.html">About</a>
+          </li>
+          <li class="nav-item border-right">
+            <a class="nav-link" href="https://hetty-chin.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hetty-chin.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
+          </li>
+        </ul>
+  
+      </nav>
+      <!--container-->
+      <div class="pt-5 pb-5 container-background">
+        <div class="container border bg-white p-4">
+
+          <div class="row align-items-center border-bottom p-4 ">
+            <div class="col ">
+              <h2>
+                Can you guess which tree?
+              </h2>
+            </div>
+          </div> 
+
+          <div class="row align-items-center p-4">
+            <div class="col-md-6 tree-photo-area">
+              <img class="img-responsive" id= "tree-photo" src ="assets/images/QuestionTree.jpeg">
+            </div> 
+            <div class="col-md-6 game-area">
+              <div id="get-started">Press any key to get started!</div>
+              <div class="col-md-4 float-right clearfix border p-3" id="score-container">
+                <h1 id="games-won-header">Number of Games Won</h1>
+                <div id="games-won"></div>
+              </div>
+              <div class="p-4 clearfix" id=" chosen-word-container">
+                <h1 id="chosen-word-header">Chosen word</h1>
+                <div id="chosen-word"></div>
+              </div>
+              <h1 id="remaining-guesses-header">Remaining Number of Guesses</h1>
+              <div id="remaining-guesses"></div>
+              <h1 id="guessed-wrong-letters-header">Letters Guessed Wrong So Far</h1>
+              <div id="guessed-wrong-letters"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+    <!--footer-->  
     <footer class="footer mt-auto py-3 bg-dark border-top ">
       <div class="container">
         <span class="text-muted"></span>

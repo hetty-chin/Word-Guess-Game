@@ -32,7 +32,7 @@ window.onload = function () {
     var gamesWonElement = document.getElementById("games-won");
 
     // grab the remamaining-guesses-element
-    var remainingGuessesElement = document.getElementById("remaining-guess");
+    var remainingGuessesElement = document.getElementById("remaining-guesses");
 
     // grab the guessed-wrong-letters-element
     var guessedWrongLettersElement = document.getElementById("guessed-wrong-letters");
@@ -72,6 +72,21 @@ window.onload = function () {
             var getStartedElement = document.getElementById("get-started");
             getStartedElement.style.display = "none";
 
+            // grab the various headers and show them
+
+            var scoreContainer = document.getElementById("score-container");
+        
+            scoreContainer.style.display = "block";
+            var chosenWordHeader = document.getElementById("chosen-word-header");
+            chosenWordHeader.style.display = "block";
+
+            var remainingGuessesHeader = document.getElementById("remaining-guesses-header");
+            remainingGuessesHeader.style.display = "block";
+
+            var guessedWrongLettersHeader = document.getElementById ("guessed-wrong-letters-header");
+
+            guessedWrongLettersHeader.style.display = "block";
+            
             resetGame();
 
         } else {             
@@ -79,7 +94,7 @@ window.onload = function () {
             // check if string has eventData.key
             if (!chosenWord.includes(eventData.key)) {
                 guessedWrongLetters.push(eventData.key);
-                // decrease the number of remaining guesses by 1
+                // decrease the number of guesses by 1
                 remainingGuessCounter --;
 
                 // display the number of remaining guesses 

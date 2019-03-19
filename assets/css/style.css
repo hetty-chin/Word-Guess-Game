@@ -1,5 +1,17 @@
-#something-else {
-    display: none;
+#chosen-word-header, #score-container, #remaining-guesses-header, #guessed-wrong-letters-header {
+    display:none;
 }
 
+.game-area, .tree-photo-area {
+    text-align: center; 
+}
+
+h1 {
+    color: #4aaaa5; 
+    font-family: 'Georgia', times, Times New Roman, serif;
+    font-weight: bold;
+  }
+#games-won, #chosen-word, #remaining-guesses, #guessed-wrong-letters {
+    line-height: 1.6;
+}  
 
