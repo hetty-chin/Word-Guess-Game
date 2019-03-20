@@ -26,7 +26,7 @@ window.onload = function () {
     var underscorePlaceholders = [];
 
     // grab #chosen-word div
-    var chosenWordElement = document.getElementById("chosen-word");;
+    var chosenWordElement = document.getElementById("chosen-word");
 
     // grab the score-element
     var gamesWonElement = document.getElementById("games-won");
@@ -58,7 +58,7 @@ window.onload = function () {
 
         guessedWrongLetters = [];
 
-        // display the guessedWrongLetters - hetty knows how to do
+        // display the guessedWrongLetters 
         guessedWrongLettersElement.innerHTML = guessedWrongLetters;   
     }
 
@@ -77,6 +77,7 @@ window.onload = function () {
             var scoreContainer = document.getElementById("score-container");
         
             scoreContainer.style.display = "block";
+
             var chosenWordHeader = document.getElementById("chosen-word-header");
             chosenWordHeader.style.display = "block";
 
@@ -121,6 +122,10 @@ window.onload = function () {
             // we need to increase the score by 1
             gamesWonCounter ++;
             // display winning tree
+
+            //grab the html element
+            document.getElementById("guessed-tree-name").innerHTML=(`${chosenWord} is correct!`);
+
             document.getElementById("tree-photo").src=treesToChooseFrom[chosenWord];
             // reset the game - as in choose a new word, show the new underscore placeholders
             resetGame();
