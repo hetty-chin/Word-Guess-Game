@@ -100,7 +100,7 @@ window.onload = function () {
                 // display the number of remaining guesses 
                 remainingGuessesElement.innerHTML = remainingGuessCounter
 
-                // display the guessedWrongLetters - hetty knows how to do
+                // display the guessedWrongLetters
                 guessedWrongLettersElement.innerHTML = guessedWrongLetters;
                 
             } else {
