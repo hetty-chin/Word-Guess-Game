@@ -127,6 +127,7 @@ window.onload = function () {
             document.getElementById("guessed-tree-name").innerHTML=(`${chosenWord} is correct!`);
 
             document.getElementById("tree-photo").src=treesToChooseFrom[chosenWord];
+            
             // reset the game - as in choose a new word, show the new underscore placeholders
             resetGame();
         }  else if (guessedWrongLetters.length >= 8) { // reset game when someone uses all their turns
